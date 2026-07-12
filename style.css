@@ -119,7 +119,7 @@ code {
 
 #game-format-iframe {
     width: 100%;
-    height: 1450px;
+    height: 1500px;
     border: none;
     display: block;
 }
@@ -132,4 +132,13 @@ code {
 
 #g-game-format-box p {
     font-family: 'Source Sans 3', sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
 }
