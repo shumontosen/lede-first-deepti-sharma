@@ -26,14 +26,6 @@ a {
     color: #5e80ab;
 }
 
-.footer {
-    background: #f4f4f4;
-    text-align: center;
-    font-size: 0.8em;
-    margin-top: 4em;
-    padding: 4em 0;
-}
-
 figure {
     margin: 0;
     padding-bottom: 1.2em;
@@ -65,7 +57,7 @@ h1 {
     font-family: "Source Sans 3", sans-serif;
     width: 100vw;
     position: relative;
-    left: 90%;
+    left: 110%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
@@ -83,12 +75,6 @@ p {
     line-height: 1.6;
     margin: 0;
     padding-bottom: 1.2em;
-}
-
-ul {
-    margin: 0;
-    padding-bottom: 1em;
-    line-height: 1.6;
 }
 
 iframe {
