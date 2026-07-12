@@ -103,18 +103,19 @@ code {
     }
 }
 
-/* ai2html game-format graphic: fixed heights per breakpoint, no JS */
 #game-format-iframe {
     width: 100%;
-    height: 1600px;
-    /* replace 1200 with your mobile artboard's actual height in px */
+    height: 1500px;
     border: none;
     display: block;
 }
 
 @media (min-width: 1000px) {
     #game-format-iframe {
-        height: 480px;
-        /* replace 600 with your desktop artboard's actual height in px */
+        height: 500px;
     }
+}
+
+#g-game-format-box p {
+    font-family: 'Source Sans 3', sans-serif;
 }
