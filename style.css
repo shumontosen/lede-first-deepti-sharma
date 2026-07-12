@@ -91,10 +91,20 @@ code {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
+}
 
-.content {
-    max-width: 640px;
-    margin: auto;
+/* ai2html game-format graphic: heights matched to its actual artboard sizes and breakpoint */
+iframe[src="game-format/game-format.html"] {
+    width: 100%;
+    height: 1450px;
+    /* small artboard: max-width 360px, height scales to 1400px at that width; small buffer added */
+    border: none;
+    display: block;
 }
+
+@media (min-width: 1000px) {
+    iframe[src="game-format/game-format.html"] {
+        height: 480px;
+        /* large artboard: fixed 1000x480px, kicks in at 1000px container width */
+    }
 }
-       
