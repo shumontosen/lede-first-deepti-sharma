@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Source Sans 3, serif;
     text-rendering: optimizeLegibility;
+    background-color: #d7dde8;
 }
 
 .content {
@@ -16,6 +17,13 @@ body {
 
 a {
     color: #f05349;
+}
+
+.byline {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.3em;
+    color: #5e80ab;
 }
 
 .footer {
@@ -39,14 +47,30 @@ figcaption {
 }
 
 h1 {
-    font-family: 'Lora', Georgia, serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: bold;
     font-size: 3em;
     line-height: 1.1;
+    width: 100vw;
+    position: relative;
+    left: 67%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 0.25em;
+    color: #5e80ab;
 }
 
 .subhead {
-    font-family: 'Lora', Georgia, serif;
+    font-family: "Source Sans 3", sans-serif;
+    width: 100vw;
+    position: relative;
+    left: 90%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    font-size: 1em;
+    margin-bottom: 0.1em;
 }
 
 iframe,
@@ -93,18 +117,18 @@ code {
     }
 }
 
-/* ai2html game-format graphic: heights matched to its actual artboard sizes and breakpoint */
-iframe[src="game-format/game-format.html"] {
+/* ai2html game-format graphic: fixed heights per breakpoint, no JS */
+#game-format-iframe {
     width: 100%;
-    height: 1450px;
-    /* small artboard: max-width 360px, height scales to 1400px at that width; small buffer added */
+    height: 1200px;
+    /* replace 1200 with your mobile artboard's actual height in px */
     border: none;
     display: block;
 }
 
-@media (min-width: 1000px) {
-    iframe[src="game-format/game-format.html"] {
-        height: 480px;
-        /* large artboard: fixed 1000x480px, kicks in at 1000px container width */
+@media (min-width: 640px) {
+    #game-format-iframe {
+        height: 600px;
+        /* replace 600 with your desktop artboard's actual height in px */
     }
 }
